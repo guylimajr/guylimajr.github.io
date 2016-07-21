@@ -1,0 +1,118 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica";
+}
+
+h2, h3, p, ol, ul {
+  margin-bottom: 9pt;
+}
+
+p + ul, p + ol {
+  margin-top: -9pt;
+}
+
+ol, ul {
+  margin-left: 27pt;
+}
+
+h1 {
+  color: #606060;
+  font-size 18pt;
+  text-transform: lowercase;
+  margin-bottom: 18pt;
+}
+
+p, li {
+  color: #202020;
+  line-height: 18pt;
+}
+
+h2 {
+  color: #606060;
+  font-size: 24pt;
+  text-transform: lowercase;
+}
+
+h3 {
+  color: #404040;
+  font-size: 18pt;
+  line-height: 18pt;
+  text-transform: lowercase;
+}
+
+p cite {
+  color: #303030;
+}
+
+body, p, li {
+  font-size: 14pt;
+}
+
+p.section-description {
+  margin-bottom: 18pt;
+}
+
+section {
+  overflow: hidden;
+  margin-bottom: 18pt;
+}
+
+#test {
+  color: red;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.row + .row {
+  margin-top: 18pt;
+}
+
+p.quote {
+  font-size: 18pt;
+  font-style: italic;
+}
+
+p.quotation-source {
+  text-align: right;
+}
+
+.columns_3, .columns_4, .columns_6, .columns_9, .columns_12 {
+  float: left;
+}
+
+.column + .column {
+  margin-left: 20px;
+}
+
+article {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* .columns_3, .columns_6, .columns_12 { */
+/*   margin-left: 20px; */
+/*   margin-right: 20px; */
+/* } */
+
+.columns_3 {
+  width: 220px;
+}
+
+.columns_4 {
+  width: 300px;
+}
+
+.columns_6 {
+  width: 460px;
+}
+
+.columns_9 {
+  width: 700px;
+}
+
+.columns_12 {
+  width: 940px;
+}

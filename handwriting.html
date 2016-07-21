@@ -1,0 +1,215 @@
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='portfolio.css'>
+  </head>
+  <body>
+    <article id='content'>
+
+      <h1>Handwriting in OneNote for iPad</h1>
+
+
+      <section id='overview'>
+        <h2 class='columns_12'>Overview</h2>
+        <div>
+          <div class='column columns_6'>
+            <iframe width="460" height="259" src="https://www.youtube.com/embed/bOpxNVJ7tZ4" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class='column columns_6'>
+
+            <p>OneNote is a notetaking application that supports many types of notes, like typed text, audio, images, and handwriting.</p>
+            <p>On Windows, users had been able to write in OneNote for years. In 2014, OneNote's top user request was to add handwriting support to iPad.</p>
+
+            <p>I designed a handwriting experience for iPad that was tailored for the needs of students. The work consists of two parts:</p>
+
+            <ol>
+              <li>Designing a UI that provides quick access to the tools students need</li>
+              <li>Designing a physically natural experience for writing and manipulating OneNote's canvas</li>
+            </ol>
+
+            <p>Handwriting shipped in OneNote for iPad in March 2015. This design served as the basis for Word, Excel, and PowerPoint across both iOS and Windows 10.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id='design_goals'>
+        <h2 class='column columns_12'>Design Goals</h2>
+        <p class='section-description'>OneNote was seeing <strong>increasing usage in primary and secondary education</strong>. Taking notes in class seemed like a perfect fit for handwriting in OneNote. I selected <strong>students as my target users</strong> for this project.</p>
+        <div>
+          <div class='column columns_6'>
+            <h3>Quick Color Coding</h3>
+            <p>Class observations showed me that <strong>students color-code their notes</strong>. They needed to be able to quickly change between a set of distinct colors.</p>
+          </div>
+          <div class='column columns_6'>
+            <h3>Write Naturally With a Stylus</h3>
+            <p>Students write a lot of notes during class over a long period of time.</p>
+            <p>To write comfortably, <strong>students needed to be able to write with a stylus while resting their hand</strong>, just like they would with pen and paper.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id='understanding'>
+        <h2>Understanding the Problem</h2>
+        <p class='section-description'>Before starting designing, I needed to learn more. I needed to better understand how students worked in school. I also needed to study how iPads handled touches and styluses.</p>
+
+        <section>
+          <img src='images/handwriting-colors.png' alt='Students use colors to color-code their notes during class.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>How Do Students Take Notes?</h3>
+            <p>To better understand my target users, <strong>I visited a middle school</strong> where students used OneNote on Windows tablets to take notes.</p>
+            <p>I observed that almost every student wrote in several colors in order to <strong>color-code their notes</strong>. They would rapidly switch between different colored pens to record different meanings.</p>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/handwriting-touches.png' alt='When a person rests their hand to write on an iPad to write, the device detects many touches.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>How Do Styluses Work on iPad?</h3>
+            <p>Before the Apple Pencil, iPad could not distinguish a stylus from a finger.</p>
+            <p>When you write while resting your hand on the screen, iPad can detect several touches. <strong>It's not obvious which touches are your hand and which are the stylus</strong>.</p>
+            <p><strong>A naive approach would result in the your palm leaving marks all over the canvas</strong>.</p>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section id='color-coding'>
+        <h2>Quick Color Coding</h2>
+        <p class='section-description'>I first set about designing UI that would enable students to fluidly color-code their notes while following along in class.</p>
+
+        <section>
+          <img src='images/handwriting-onenote-2013.png' alt='OneNote 2013 provided users a large gallery of custom pens.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Understanding the Previous User Model</h3>
+            <p>Usability studies and interviews showed people were happy with the handwriting UI in OneNote 2013.</p>
+            <p>It showed a user-customizable gallery of tools. <strong>Each tool was a specific combination of</strong></p>
+            <ul>
+              <li><strong>type</strong>(pen or highlighter)</li>
+              <li><strong>color</strong></li>
+                <li><strong>thickness</strong></li>
+            </ul>
+            <p>This UI <strong>didn't fit in OneNote for iPad's Ribbon</strong>. OneNote for iPad featured a Ribbon was vertically smaller with bigger, touch-friendly buttons.</p>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/handwriting-sketches.png' alt='Images of sketches I used to explore the design space.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Exploring Alternative Models</h3>
+            <p>I used sketching as a way to explore the design space and consider different models.</p>
+            <p>Through this sketching, I realized:</p>
+            <ol>
+              <li>OneNote 2013 is optimized to change tool type, color, and thickness all with one touch</li>
+              <li><strong>students changed colors very frequently, tools moderately frequently, and thickness infrequently</strong></li>
+            </ol>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/handwriting-first-mockup.png' alt='The first mockup I produced of the new model which seperates tools from colors and thickness.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Optimizing for Fast Color Switching</h3>
+            <p>I arrived at a new model that put colors front-and-center as opposed to specific tools. This model <strong>separated the UI into three parts</strong>:</p>
+            <ol>
+              <li>tool type</li>
+              <li>colors</li>
+              <li>thicknesses</li>
+            </ol>
+
+            <p>This provided users <strong>one-touch</strong> access to</p>
+            <ul>
+              <li>several preset colors</li>
+              <li>all the tools</li>
+            </ul>
+            <p>and <strong>two-touch</strong> access to</p>
+            <ul>
+              <li>a wider array of colors</li>
+              <li>thicknesses</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/handwriting-lots-of-mockups.png' alt='I made mockups to conduct user tests.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Validating the New Model</h3>
+            <p>I produced thorough mockups of the UI. <strong>I used these mockups to conduct user tests</strong> on iPad using PowerPoint.</p>
+            <p>The tests showed that users clearly understood each part of the UI and they felt comfortable configuring it.</p>
+          </div>
+        </section>
+      </section>
+
+      <section id='natural'>
+
+        <h2>Write Naturally with a Stylus</h2>
+        <p class='section-description'>Without some smarts in OneNote, the app wouldn't be able to tell your touches apart from your stylus. You'd have to write awkwardly, hovering your hand above the screen's surface.</p>
+
+        <section>
+          <img src='images/placeholder.png' alt='A video deomonstrating a palm rejection prototype I created.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Which Touch Is the Stylus?</h3>
+            <p>I observed that generally people hold their pen so that the tip is the most extreme point in a given direction. For a right handed person, the pen tip is the point furthest to the left.</p>
+            <p>With this observation, I <strong>designed a heuristic to distinguish the stylus from the your palm</strong>. I built a prototype to validate my approach.</p>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/placeholder.png' alt='A video demonstrating the ability to pan and zoom in my palm rejection prototype.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Telling Writing Apart from Panning and Zooming</h3>
+            <p>Frequently, iOS considers you to be panning or pinching while writing with your hand on the screen. Pans or zooms interrupt your work.</p>
+            Through experimentation, I found that iOS is rather lenient with its definitions for pinches and zooms.</p>
+            <p><strong>I built my prototype to only acknowledge stricter versions of two-finger pans and zooms.</strong></p>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/handwriting-grips.png' alt='An image of the screen where you tell OneNote how you hold a pen.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Making Sure It Works for Everybody</h3>
+            <p>Engineers took my prototype's logic, expanded on it, and built it into OneNote.</p>
+            <p>By <strong>testing a wide array of users, we refined the design</strong> to work for</p>
+            <ul>
+              <li>the many ways people hold pens</li>
+              <li>different languages</li>
+            </ul>
+            <p>For example, through iterative testing, we improved handling of the short, straight strokes that are frequently used in Korean.</p>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section id='results'>
+
+        <h2>Results</h2>
+
+        <section>
+          <img src='images/handwriting-onenote-final.png' alt='An image of handwriting in OneNote for iPad.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>OneNote for iPad</h3>
+            <p>Handwriting shipped in OneNote for iPad in February 2015.</p>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/handwriting-ios.png' alt='An image of handwriting in other Microsoft Office for iPad apps.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Microsoft Office for iPad</h3>
+            <p>Later, Word, Excel, and Powerpoint on iPad all shipped the same interaction model.</p>
+          </div>
+        </section>
+      </section>
+
+        <section>
+          <img src='images/handwriting-uwp.png' alt='An image of handwriting in Microsoft Office apps for Windows 10.' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Microsoft Office for Windows 10</h3>
+            <p>The same experience also later shipped across OneNote, Word, Excel, and Powerpoint on Windows 10.</p>
+          </div>
+        </section>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,399 @@
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='portfolio.css'>
+  </head>
+  <body>
+    <article id='content'>
+
+      <h1>Lists in OneNote</h1>
+
+
+      <section id='overview'>
+        <h2 class='columns_12'>Overview</h2>
+        <div>
+          <img src='images/placeholder.png' alt='' class='column columns_3'>
+          <div class='column columns_9'>
+
+            <p class='row'>OneNote is a general-purpose notetaking app that lets you do many things. One of its top uses is creating lists. I was asked to explore how to improve the lists experience for our users.</p>
+
+            <p>I designed an experience that matches people's existing list habits. I formed these goals for the design by investigating how people make and use lists:</p>
+
+            <ol>
+              <li>Make it quick to add new lists</li>
+              <li>Let you type in a familiar way</li>
+              <li>Allow big tasks to be broken down with subtasks</li>
+              <li>Filter out the things you have already done</li>
+            </ol>
+
+            <p>It shipped on iPhone in April of 2015.</p>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section id='learning-from-people'>
+
+        <h2 class='column columns_12'>Learning From People</h2>
+
+        <p>I formed goals mainly based on talking to people. During dozens of user tests or interviews (many for unrelated projects), I'd take time to ask participants about how they use lists.</p>
+        <p class='section-description'>I interviewed a variety of students and workers. Some of them used paper, some an app; most used both. When possible, I would have them guide me through their actual lists.</p>
+
+        <div class='row'>
+
+
+          <div class='column columns_6'>
+            <h3>Most Notes Are Lists</h3>
+            <p><strong>People care most about remembering specific things that they need to do</strong>. The majority of notes they take are lists.</p>
+          </div>
+
+          <div class='column columns_6'>
+            <h3>Mosts Lists Are Short Lived</h3>
+            <p>List accumulate cruft the longer they're in use. <strong>People frequently make new lists to start fresh</strong>. Paper lists necessitate this, but people do it in apps too.</p>
+          </div>
+
+        </div>
+
+        <div class='row'>
+
+          <div class='column columns_6'>
+            <h3>People Use General Apps</h3>
+            <p>People favor general-purpose apps (Apple's Notes, Google Keep, Evernote) over list-specific apps. <strong>General-purpose apps provide a familiar editing experience</strong> and people don't see the benefit in learning something new.</p>
+          </div>
+
+          <div class='column columns_6'>
+            <h3>People Use Subtasks</h3>
+            <p>When available, <strong>people use subtasks to break work down</strong>. Paper notetakers do this intuitively with indentation.</p>
+          </div>
+
+        </div>
+
+        <div class='row'>
+
+          <div class='column columns_6'>
+            <h3>It's Hard to Manage Long Lists</h3>
+            <p>There are still some long-lived lists. People keep lists like "Movies to watch". With many items, <strong>these lists become cumbersome</strong> on paper or in simple apps.</p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section id='learning-from-apps'>
+
+        <h2>Learning from other Apps</h2>
+
+        <p class='section-description'>There are an endless number of list apps across iOS, Android, and desktop. I looked at some of the top apps to see how they well they served people's habits.</p>
+
+        <section>
+
+          <img src='images/lists/reminders.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Lists Feel Heavy</h3>
+
+            <p>People make lists when they are afraid they'll forget something.</p>
+            <p>Most general purpose notetaking apps let you just start typing what you want to remember. <strong>Most list apps make you name your list first.</strong></p>
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <img src='images/lists/todoist.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Familiar Typing</h3>
+
+            <p>Most list apps have their own methods for inputting text. Frequently, each list item feels like its own island, separated from the rest of your stuff.</p>
+
+            <p>In their effort to optimize the list creation experience, <strong>these apps defy expectations about how to work with text</strong>.</p>
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <img src='images/lists/wunderlist.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Hard to Break Work Down</h3>
+
+            <p>Many apps simply don't support subtasks. Others <strong>require users to work across different screens</strong>.</p>
+
+            <p>This makes it inconvenient to add subtasks or see them when you're looking for what to do next.
+            </p>
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <img src='images/lists/anydo.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Focused on What's Left</h3>
+
+            <p>Most list-specific apps filter completed and uncompleted tasks into two groups.</p>
+            <p>This lets you focus on what you still have to do, which makes it <strong>easier to work with big, long-lived lists</strong>.</p>
+
+          </div>
+
+        </section>
+
+      </section>
+
+
+      <section id='goals'>
+
+        <h2 class='column columns_12'>Design Goals</h2>
+
+        <p>Since lists are so important to so many people and because they make so many, I decided to create a new list-specific experience in OneNote.</p>
+
+        <div class='row'>
+
+          <div class='column columns_6'>
+            <h3>Adding New Lists Is Quick</h3>
+            <p>People make lots of short-lived lists. You should always feel like you can quickly create a new list.</p>
+          </div>
+
+          <div class='column columns_6'>
+            <h3>Typing in a List Feels Familiar</h3>
+            <p>Many list-specific apps defy users' basic expectations about inputting or editing text. Users don't want to have to think about how to enter information into an app.</p>
+          </div>
+
+        </div>
+
+        <div class='row'>
+
+          <div class='column columns_6'>
+            <h3>Allow Big Tasks to be Broken Down</h3>
+            <p>This is a differentiator. Users do this frequently on paper and in OneNote.
+            </p>
+          </div>
+
+          <div class='column columns_6'>
+            <h3>Filter out the Things You Already Did</h3>
+            <p>People keep important long-lived lists. They want to be able to easily separate what's been done from what's left.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id='quick'>
+
+        <h2>Adding New Lists is Quick</h2>
+
+        <p class='section-description'>People create lots of short-lived lists. I wanted the app to encourage you to make as many as you want.</p>
+
+        <section>
+
+          <img src='images/lists/blank-page.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Previously, in OneNote</h3>
+
+            <p>In the old experience, you'd <strong>create a new page and then add a list to it</strong>.</p>
+
+            <p>However, when making lists, people think, "I want to make a list", not "I want to make a new page and add a list to it". OneNote's model <strong>didn't match users' thought processes</strong>.</p>
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <img src='images/lists/new-note-sketches.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Matching Your Mental Model</h3>
+
+            <p>A pattern in many apps is a creation button that expands to show several options to choose. In this flow the user:</p>
+
+            <ol>
+              <li>thinks, "I want to create..."</li>
+              <li>presses the button</li>
+              <li>finishes the thought, "... a list", by selecting the option</li>
+            </ol>
+
+            <p>This pattern worked for OneNote lists and allowed us to showcase other kinds of notes.</p>
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <img src='images/placeholder.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Quickly Write What You Want to Remember</h3>
+
+            <p>People make lists because they want to remember the items of the list. However, many apps force you to name lists up first.  This slows the you down from recording whatever you wanted to remember.</p>
+
+           <p><strong>OneNote places focus in the body of a new list</strong>. The list doesn't need a name. </p>
+
+          </div>
+
+        </section>
+
+      </section>
+
+
+      <section id='familiar'>
+
+        <h2>Typing in a List Feels Famliar</h2>
+
+        <p class='section-description'>People are normally super comfortable typing text on their phones. I felt <strong>the keyboard should be the primary interface</strong> for editing your list. Starting typing, continuing typing, and fixing your mistakes should work like it does across the rest of your phone.</p>
+
+        <section>
+
+          <img src='images/placeholder.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Normal Way to Start Typing</h3>
+
+            <p>Normally you just tap some text to type right there. Many list apps make you tap multiple times or leave your context to edit items.</p>
+
+            <p>In OneNote, you just tap and type right there.</p>
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <img src='images/placeholder.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Just Keep Typing</h3>
+
+            <p>When you're adding a bunch of stuff to a list, you generally write down the most important things first.</p>
+
+            <p>Many list apps always add items to the top of a list, which results in your items being in reverse order.</p>
+
+            <p>In OneNote, you tap Return and keep moving down, so things are in the right order.</p>
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <img src='images/placeholder.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Go Back And Fix Your Mistakes</h3>
+
+            <p>People make typos. Sometimes they change their minds. In almost all list specific apps, you can't just tap backspace to go back to fix a previous item.  </p>
+
+            <p>In OneNote, just tap or hold backspace to go back to a previous line.</p>
+
+          </div>
+
+        </section>
+
+      </section>
+
+      <section id='subtasks'>
+
+        <h2>Allow Big Tasks to be Broken Down</h2>
+
+        <p class='section-description'>Breaking big tasks down helps users accomplish their goals. People naturally do this on paper.</p>
+
+        <section>
+
+          <img src='images/lists/indentation-sketch.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Just Like on Paper</h3>
+
+            <p>People come to a list to see what's left to do. Other apps that support subtasks show them in a subview, which makes it harder to get the big picture of the work you have to do.</p>
+
+            <p>In OneNote, you <strong>just indent your list to indicate subtasks</strong>. You can see everything at once.</p>
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <img src='images/lists/accessory-bar-mockup.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Using UI You Already Know</h3>
+
+            <p>OneNote already supports indentation in normal note pages.</p>
+
+            <p>Lists use the <strong>same UI to accomplish indentation as normal pages</strong>.</p>
+
+            <p>The user can also execute the same shortcuts from the keyboard, like tapping Backspace at the beginning of an indented task to unindent it.</p>
+
+          </div>
+
+        </section>
+
+      </section>
+
+    <section id='filter'>
+
+        <h2>Filter out the Things You Already Did</h2>
+
+        <p class='section-description'>People make big lists. It should be really easy to tell what's left to do and what you've already done.</p>
+
+        <section>
+
+          <img src='images/lists/filtering-mockup.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>Where Should Completed Items Go?</h3>
+
+            <p>I created <strong>mockups to explore different concepts of how to filter</strong> what's left to do from what's already done.</p>
+
+            <p>Collapsing the completed items below the uncompleted items was most clear to users.</p>
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <img src='images/placeholder.png' alt='' class='column columns_3'>
+
+          <div class='column columns_9'>
+
+            <h3>How to Show Completed Subtasks?</h3>
+
+            <p>For many subtasks, their hierarchy provides context to understand their meaning. I needed to design a way to show completed subtasks with uncompleted parent items.</p>
+
+            <p>I came up with a "ghost parent" for completed tasks that have uncompleted parent items. The ghost parent shows hierarchy, but remains unchecked and isn't interactive.</p>
+
+          </div>
+
+        </section>
+
+      </section>
+
+
+    </article>
+  </body>
+</html>
