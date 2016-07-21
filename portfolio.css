@@ -1,7 +1,12 @@
-body, div, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
   padding: 0;
   margin: 0;
   font-family: "Helvetica";
+}
+
+article, nav > div {
+  width: 940px;
+  margin: 0 auto;
 }
 
 h2, h3, p, ol, ul {
@@ -54,15 +59,13 @@ p.section-description {
 }
 
 section {
+  clear: both;
   overflow: hidden;
   margin-bottom: 18pt;
 }
 
-#test {
-  color: red;
-}
-
 .row {
+  clear: both;
   overflow: hidden;
 }
 
@@ -79,7 +82,7 @@ p.quotation-source {
   text-align: right;
 }
 
-.columns_3, .columns_4, .columns_6, .columns_9, .columns_12 {
+.columns_3, .columns_4, .columns_6, .columns_9, .columns_8, .columns_12 {
   float: left;
 }
 
@@ -87,15 +90,18 @@ p.quotation-source {
   margin-left: 20px;
 }
 
-article {
-  width: 940px;
-  margin: 0 auto;
+nav, article {
+  clear: both;
 }
 
 /* .columns_3, .columns_6, .columns_12 { */
 /*   margin-left: 20px; */
 /*   margin-right: 20px; */
 /* } */
+
+img {
+  max-width: 100%;
+}
 
 .columns_3 {
   width: 220px;
@@ -109,10 +115,113 @@ article {
   width: 460px;
 }
 
+.columns_8 {
+  width: 620px;
+}
+
 .columns_9 {
   width: 700px;
 }
 
 .columns_12 {
   width: 940px;
+}
+
+ul.site-nav {
+  margin: 0;
+}
+
+ul.site-nav > li {
+  font-size: 16pt;
+  float: left;
+  margin-left: 18pt;
+  text-align: baseline;
+}
+
+ul.site-nav > li:first-of-type {
+  margin-left: 0;
+}
+
+.dropdown-menu {
+  margin: 0 -9pt;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  margin: 9pt 9pt;
+  padding: 0;
+}
+
+nav {
+  height: 54pt;
+  min-width: 940px;
+  background-color: #404040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 18pt;
+  text-transform: lowercase;
+}
+
+nav li, nav a {
+  color: #FFFFFF;
+  list-style: none;
+}
+
+nav a:link {
+  text-decoration: none;
+}
+
+nav a:visited {
+  text-decoration: none;
+}
+
+nav li:hover {
+  text-decoration: underline;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-menu-hack {
+  display: block;
+}
+
+.dropdown-menu-hack {
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+}
+
+.dropdown-menu {
+  margin-top: 18pt;
+  background-color: rgba(32, 32, 32, 0.85);
+}
+
+ul.site-nav > li.home-link {
+  font-size: 24pt;
+}
+
+.current-page {
+  color: #BFBFBF;
+}
+.current-page:hover {
+  text-decoration: none;
+}
+
+.project-preview > img {
+  margin-bottom: 9pt;
+}
+
+a.project-preview:hover {
+  text-decoration: underline;
+}
+
+a.project-preview:visited {
+  text-decoration: none;
+}
+
+a.project-preview:link {
+  text-decoration: none;
 }
