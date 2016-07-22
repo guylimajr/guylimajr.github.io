@@ -51,17 +51,17 @@ p cite {
 }
 
 body, p, li {
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 p.section-description {
-  margin-bottom: 18pt;
+  margin-bottom: 36pt;
 }
 
 section {
   clear: both;
   overflow: hidden;
-  margin-bottom: 18pt;
+  margin-bottom: 36pt;
 }
 
 .row {
@@ -76,6 +76,7 @@ section {
 p.quote {
   font-size: 18pt;
   font-style: italic;
+  font-weight: lighter;
 }
 
 p.quotation-source {
