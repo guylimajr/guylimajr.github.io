@@ -226,3 +226,7 @@ a.project-preview:visited {
 a.project-preview:link {
   text-decoration: none;
 }
+
+p a {
+  color: #202020;
+}
