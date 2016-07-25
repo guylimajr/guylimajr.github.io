@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+  document.body.onclick = function () {};
   var element = document.getElementsByClassName('dropdown')[0];
   element.onclick = dropdownClicked;
   element.onmouseleave = function(e) {
-    closeDropdown(element);
+    // closeDropdown(element);
   };
 });
 
