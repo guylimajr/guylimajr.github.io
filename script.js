@@ -15,7 +15,7 @@ function dropdownClicked(e) {
     window.onclick = function() {
       closeDropdown(dropdown);
     };
-    window.touchstart = function() {
+    window.ontouchstart = function() {
       closeDropdown(dropdown);
     }
   }, 0);
