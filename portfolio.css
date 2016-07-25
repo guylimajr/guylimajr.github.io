@@ -238,8 +238,9 @@ p a {
 
 .award > .award-name {
   font-size: 18pt;
+  text-align:center;
 }
 
 .award > .awarder {
-  text-align: right;
+  text-align: center;
 }
