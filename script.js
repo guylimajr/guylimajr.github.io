@@ -13,15 +13,18 @@ function dropdownClicked(e) {
   console.log('show');
   e.stopPropagation();
   setTimeout(function () {
-    document.body.onclick = function() {
+    window.onclick = function() {
       closeDropdown(dropdown);
     };
+    window.touchstart = function() {
+      closeDropdown(dropdown);
+    }
   }, 0);
 }
 
 function closeDropdown(dropdown) {
-      console.log('hide');
-     dropdown.classList.remove('show');
-     dropdown.onclick = dropdownClicked;
-     document.onclick = null;
+  console.log('hide');
+  dropdown.classList.remove('show');
+  dropdown.onclick = dropdownClicked;
+  window.onclick = null;
 }
