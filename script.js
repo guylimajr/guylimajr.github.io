@@ -11,15 +11,12 @@ function dropdownClicked(e) {
   dropdown.classList.add('show');
 
   setTimeout(function () {
-    dropdown.onclick = function(e) {
-      e.stopPropagation();
-    };
-    body.onclick = closeDropdown;
+    document.body.onclick = closeDropdown;
   }, 0);
 }
 
 function closeDropdown(dropdown) {
      dropdown.classList.remove('show');
      dropdown.onclick = dropdownClicked;
-     body.onclick = null;
+     document.onclick = null;
 }
