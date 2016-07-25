@@ -230,3 +230,16 @@ a.project-preview:link {
 p a {
   color: #202020;
 }
+
+.award img {
+  display: block;
+  margin: auto;
+}
+
+.award > .award-name {
+  font-size: 18pt;
+}
+
+.award > .awarder {
+  text-align: right;
+}
