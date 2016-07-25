@@ -185,7 +185,7 @@ nav li:hover {
   display: inline-block;
 }
 
-.dropdown:hover .dropdown-menu-hack {
+.dropdown.show .dropdown-menu-hack, .dropdown:hover .dropdown-menu-hack {
   display: block;
 }
 
