@@ -14,12 +14,12 @@ function dropdownClicked(e) {
     dropdown.onclick = function(e) {
       e.stopPropagation();
     };
-    window.onclick = closeDropdown;
+    body.onclick = closeDropdown;
   }, 0);
 }
 
 function closeDropdown(dropdown) {
      dropdown.classList.remove('show');
      dropdown.onclick = dropdownClicked;
-     window.onclick = null;
+     body.onclick = null;
 }
