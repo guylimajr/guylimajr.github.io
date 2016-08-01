@@ -1,0 +1,313 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <title>Gameplay of Continuity 2 - Guy Lima, Jr.</title>
+    <link rel='stylesheet' type='text/css' href='portfolio.css'>
+    <script src='script.js'></script>
+
+  </head>
+  <body>
+
+      <nav>
+        <div>
+            <ul class='site-nav'>
+              <li class='home-link'><a href='index.html'>Guy Lima, Jr.</a></li>
+              <li class='dropdown'>
+                Projects
+                <div class='dropdown-menu-hack'>
+                  <ul class='dropdown-menu'>
+                    <li><a href='lists.html'>Lists in OneNote</a></li>
+                    <li><a href='handwriting.html'>Handwriting in OneNote for iPad</a></li>
+                    <li><a href='continuity2controls.html'>The Controls of <cite>Continuity 2: The Continuation</cite></a></li>
+                    <li class='current-page'>The Gameplay of <cite>Continuity 2: The Continuation</cite></li>
+                    <li><a href='continuity.html'><cite>Continuity</cite></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href='lima-resume.pdf'>Resume</a></li>
+            </ul>
+        </div>
+      </nav>
+
+    <article id='content'>
+      <h1>The Gameplay of <cite>Continuity 2: The Continuation</cite></h1>
+      <section id='overview'>
+        <h2 class='columns_12'>Overview</h2>
+        <section>
+          <div class='column columns_6'>
+            <iframe width="460" height="289" src="https://www.youtube.com/embed/eqkqHPs_22U" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class='column columns_6'>
+            <p>
+              Continuity is a puzzle game for PC, released in 2009.
+              After its success, we wanted to create an iOS sequel to make some money.
+              As a two person team, we needed to design a small set of changes to:
+            </p>
+            <ul>
+              <li>Fix some of the major problems from <cite>the original</cite></li>
+              <li>Enhance and expand on the delight players got from <cite>the original</cite></li>
+              <li>Make something that felt tailored for mobile devices</li>
+            </ul>
+
+            <p><cite>Continuity 2</cite> was designed and built by Stefan Mikaelsson and me. The early design work was mostly shared.</p>
+
+            <p>I created the vast majority of the 137 puzzles that we produced for <cite>Continuity 2</cite>. I extensively playtested the game to create, cull, and refine puzzles to make the best use of the gameplay mechanics we'd developed for the 51 levels that shipped.</p>
+
+            <p>It was released in July, 2011. It has an 83 rating on Metacritic and a 4.5-star rating on the App Store.</p>
+
+          </div>
+        </section>
+      </section>
+
+      <section id='background'>
+        <h2><cite>The Original Continuity</cite></h2>
+        <section>
+          <video src='images/c2-c1-example.mp4' autoplay='true' loop='true' controls='true' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <p>
+              <cite>The original Continuity</cite> is a puzzle game where players delight in figuring out for themselves how the game's mechanics work.
+              The player moves the character through a world thats divided into tiles using two modes:
+            </p>
+            <ul>
+              <li>When <strong>zoomed out</strong>, you <strong>move the tiles</strong>.</li>
+              <li>When <strong>zoomed in</strong>, you <strong>move the character</strong>.</li>
+            </ul>
+            <p>In each puzzle, you must <strong>navigate the character through the maze to collect the key and reach the door</strong>.</p>
+          </div>
+        </section>
+      </section>
+
+      <section id='design_goals'>
+        <h2 class='column columns_12'>Design Goals</h2>
+        <p class='section-description'>We'd playtested the <cite>original Continuity</cite> a lot and wanted to <strong>eliminate problems we'd observed</strong>. We also wanted to <strong>expand upon what players liked</strong> about <cite>the original</cite>.
+        </p>
+
+        <section>
+          <video src='images/c2gameplay/c1-punishing.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>Less Punishing</h3>
+            <p>One of the biggest problems in <cite>the original Continuity</cite>  was that <strong>players lost too much progress when they died</strong>. This left them frustrated and discouraged.</p>
+
+            <p>After dying, the character would respawn either at the beginning of the puzzle or where the character collected the key. You could <strong>lose minutes of progress</strong> due to a small mistake.</p>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/c2gameplay/c1-progress.png' alt='' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Clearer Subgoals</h3>
+            <p>It was hard to identify progress within a large Continuity puzzle. <strong>Playtesters couldn't tell whether they were on the right track or not</strong>.
+            <p>Players lost interest without some positive feedback.</p>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/c2gameplay/level-size-comparison.png' alt='' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>More Puzzles Per Pixel</h3>
+            <p><cite>Continuity 2's</cite> level size was designed to keep everything clearly visible while zoomed out on a 3.5-inch phone. The result is a significantly smaller puzzles than in <cite>the original</cite>.</p>
+            <p>We needed a way to <strong>fit a similar amount of challenge in less space</strong> to keep the game from being too easy.</p>
+          </div>
+        </section>
+
+        <section>
+          <video src='images/c2gameplay/c1-connectedness.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>Even More Continuity</h3>
+            <p>In <cite>the original Continuity</cite>, the character can only move between tiles when their edges form a continuous image. However, in <cite>the original</cite>, you only ever need to match two tiles at a time: the one you're leaving and the one you're entering.</p>
+            <p>Making continuous matches was <strong>a unique aspect of <cite>the original</cite> that players really enjoyed</strong>. We wanted to enhance this fun for the sequel.</p>
+          </div>
+        </section>
+
+        <section>
+          <video src='images/continuity/pause-trick.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>Hidden Surprises</h3>
+            <p>Players especially enjoyed moments where they feel like they discovered new aspects of the game all by themselves.</p>
+            <p>In <cite>the original Continuity's</cite> 13th puzzle, the player figures out that the gravity is paused when the world is zoomed out. This has been true all along, but the player needs to make this discovery to progress.</p>
+            <p>For <cite>Continuity 2</cite>, we wanted you to <strong>feel delighted for discovering something that was hidden in plain sight</strong>.</p>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/c2gameplay/iphone.png' alt='' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Designed for Mobile</h3>
+            <p>In early 2010, many mobile games felt like they only existed on iOS to cash in on the App Store's success.</p>
+            <p>We wanted <cite>Continuity 2</cite> to feel like it <strong>needed</strong> to be played on iPhone. We wanted it to feel <strong>intrinsically mobile</strong>.</p>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section id='approach'>
+        <h2> Design Approach</h2>
+        <section>
+          <p>Our team was small and we wanted to <strong>keep the game's scope small</strong>. Expanding <cite>the original</cite> with lots of new gameplay elements and mechanics would require us to produce lots of assets and code lots of new logic.</p>
+          <p>We chose to focus on gameplay concepts that were <strong>aesthetically minimal</strong> (so we were capable of producing them), <strong>logically simple</strong> (so we could code them), and that <strong>accomplished multiple design goals</strong> (so we didn't have to make too many).</p>
+          <p>In the end, we introduced just three mechanics. I designed puzzless to utilize these mechanics to achieve our goals.</p>
+        </section>
+      </section>
+
+      <section id='coins'>
+        <h2>Coins</h2>
+        <p>Some kind of optional bonus pickup item is common in platforming games. We originally conceived of coins as a way just to give you a moment of delight as you picked one up. Through playtesting, I found that coins helped players form <strong>subgoals</strong> and could make the game <strong>less punishing</strong>.</p>
+        <p class='section-description'>Coins are present from the very beginning to help you out.</p>
+
+        <section>
+          <img src='images/c2gameplay/c2-progress.png' alt='' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Clearer Subgoals</h3>
+            <p>I found that playtesters figured out where they needed to go by noticing which coins they'd collected and which they hadn't. They <strong>formed subgoals to move toward the coins they'd not yet collected</strong>.</p>
+            <p>Through playtesting, I found players felt best when they were always moving forward. I'd identify areas where playertesters would get lost and <strong>add coins to help guide them along</strong>.</p>
+          </div>
+        </section>
+
+        <section>
+          <video src='images/c2gameplay/coins-checkpoints.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>Less Punishing</h3>
+            <p>Since coins are scattered throughout puzzles, we decided they could also <strong>serve as checkpoints</strong>. If you die, you go back to the location of your most-recently-collected coin, which probably wasn't so long ago.</p>
+            <p>I'd <strong>add coins to puzzles wherever playtesters frequently died</strong> in order to minimize frustration.</p>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/c2gameplay/challenge-times.png' alt='' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>Bonus: Optional Challenges</h3>
+            <p>We realized coins allowed us to add <strong>extra rewards</strong> for players that collected all the coins in a puzzle and an additional reward for those who did so quickly.</p>
+            <p>We designed an <strong>achievement system</strong> to encourage replayability.</p>
+          </div>
+        </section>
+
+      </section>
+
+      <section id='rotation'>
+        <h2>Rotation</h2>
+        <p>One of the first things we explored was whether players would enjoy rotating their devices to alter the game's gravity. They did, so the concept stuck.</p>
+        <p>This mechanic was a <strong>hidden-in-plain-sight surprise</strong> that let us design <strong>denser puzzles</strong>, and felt <strong>designed for mobile devices</strong>.</p>
+        <p class='section-description'>Rotation is introduced about a third of the way through the game, just as you're getting a basic handle on things.</p>
+
+        <section>
+          <video src='images/c2gameplay/rotation-surprise.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>Hidden Surprise</h3>
+            <p>In the 21st puzzle of <cite>Continuity 2</cite>, you discover that you have to rotate your device to change the direction of the game's gravity. <strong>You've been able to do this the whole game, but only now have you had any reason to try it.</strong></p>
+            <p>By puzzle 21, playtesters had played the game for almost hour. They were shocked and delighted when they discovered rotation.</p>
+          </div>
+        </section>
+
+        <section>
+          <video src='images/c2gameplay/rotation-density.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>More Puzzles Per Pixel</h3>
+            <p>In <cite>the original Continuity</cite>, the character runs down empty hallways. In <cite>Continuity 2</cite>, I used rotation and spikes to create <strong>little extra challenges for players as they moved around the level</strong>.</p>
+            <p>Most of these rotation "puzzles" are quite simple. But <strong>playtesters felt clever for overcoming small, frequent obstacles</strong>.</p>
+          </div>
+        </section>
+
+        <section>
+          <video src='images/c2gameplay/rotation-mobile.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>Designed for Mobile</h3>
+            <p>We were concerned that playtesters would grow tired of turning their phones, but they didn't. <strong>Playtesters found it physically simple, uniquely fun, and specifically mobile</strong>.</p>
+            <p>The design paired well with <cite>Continuity 2's</cite> <a href='c2controls.html'>touch-screen controls</a>, which work great in any orientation.</p>
+          </div>
+        </section>
+
+        <section>
+          <video src='images/c2gameplay/rotation-bonus.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>Bonus: Puzzle Variety</h3>
+            <p><strong>Through producing and testing many levels, I found lots of novel uses for the rotation mechanics</strong>, which added more discoveries for players to make.</p>
+            <p>In this puzzle, the player rotates the world back and forth to guide the character without it touching the ground.</p>
+          </div>
+        </section>
+
+      </section>
+
+      <section id='gates'>
+        <h2>Levers, Wires, and Gates</h2>
+        <p>I was primarily responsible for the design of levers, wires, and gates.</p>
+        <p>Wires cross tiles to make the world feel <strong>more continuous</strong>. They also create <strong>explicit suboals</strong> and <strong>increase puzzle density</strong>.</p>
+        <p class='section-description'>They show up two thirds of the way through the game, right as the you've gotten used to solving puzzles with rotation.</p>
+
+        <section>
+          <video src='images/c2gameplay/gates-connectedness.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>Even More Continuity</h3>
+            <p>Flipping a lever when it connects to a gate by a series of wires, opens or closes the gate. <strong>Wires can connect levers to gates across several continuous tiles</strong>.</p>
+            <p>I found puzzles work best with <strong>multiple continuous arrangements</strong>. Generally, you need to create one configuration to connect the lever to the gate, but another to move from the lever to the gate.</p>
+          </div>
+        </section>
+
+        <section>
+          <video src='images/c2gameplay/gates-progress.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>Clearer Subgoals</h3>
+            <p><strong>A closed gate is an obvious barrier. You know you need to open it</strong>. You feel like you've made progress when you do.</p>
+            <p>In this puzzles, once you open the gate, you can get the key.</p>
+          </div>
+        </section>
+
+        <section>
+          <img src='images/c2gameplay/gates-density.png' alt='' class='column columns_6'>
+          <div class='column columns_6'>
+            <h3>More Puzzles Per Pixel</h3>
+            <p>Gates can be remotely opened to offer new paths out of previously visited rooms. This let me create puzzles where <strong>the same areas are revisited multiple times</strong>.</p>
+          </div>
+        </section>
+
+        <section>
+          <video src='images/c2gameplay/gates-bonus.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
+          <div class='column columns_6'>
+            <h3>Bonus: Puzzle Variety</h3>
+            <p>Through iteratively creating and playtesting puzzles, I found that I could make <strong>many different types of puzzles using levers, wires, and gates</strong>.</p>
+            <p>In this puzzle, when you flip the lever, some gates open, but others close to bar your path. This puzzle makes you move the tiles to break a connection in the world.</p>
+          </div>
+        </section>
+
+      </section>
+      <section id='results'>
+        <h2>Results</h2>
+        <section>
+        <p>
+        <cite>Continuity 2: The Continuation</cite> was released to the App Store in July, 2011.
+        </p>
+        <p>
+        It received IGN's Editor's Choice Award. It currently has a score of 83 on Metacritic. It has a 4.5-star rating on the App Store.
+        </p>
+        </section>
+        <div>
+          <div class='column columns_4'>
+            <p class='quote'>
+            "Continuity 2 brings the browser formula to the touch screen without a hitch."
+            </p>
+            <p class='quotation-source'>
+            - JayIsGames
+            </p>
+          </div>
+          <div class='quote column columns_4'>
+            <p class='quote'>
+            "I'll probably keep this one around long after I master all the challenge times, just to show people how neat iOS gaming can be."
+            </p>
+            <p class='quotation-source'>
+            - TouchArcade
+            </p>
+          </div>
+          <div class='quote column columns_4'>
+            <p class='quote'>
+            "... a mobile heir apparent to the Portal 2 kingdom."
+            </p>
+            <p class='quotation-source'>
+            - Engadget
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+  </body>
+</html>
