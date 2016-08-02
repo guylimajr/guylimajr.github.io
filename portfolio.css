@@ -164,9 +164,28 @@ nav {
   text-transform: lowercase;
 }
 
+span.project-type-header {
+  font-weight: bold;
+  color: #BFBFBF;
+}
+
 nav li, nav a {
   color: #FFFFFF;
   list-style: none;
+}
+
+.project-type > ul {
+  margin-left: 9px;
+  padding-left: 0px;
+}
+
+.project-type + .project-type {
+  margin-top: 18px;
+}
+
+li.project-link {
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 nav a:link {
@@ -177,8 +196,12 @@ nav a:visited {
   text-decoration: none;
 }
 
-nav li:hover {
+.site-nav > li:hover, .project-link:hover {
   text-decoration: underline;
+}
+
+.site-nav > li.current-page:hover, .project-link.current-page:hover {
+  text-decoration: none;
 }
 
 .dropdown {
@@ -197,7 +220,7 @@ nav li:hover {
 
 .dropdown-menu {
   margin-top: 18pt;
-  background-color: rgba(32, 32, 32, 0.85);
+  background-color: rgba(32, 32, 32, 0.90);
 }
 
 ul.site-nav > li.home-link {
@@ -243,4 +266,23 @@ p a {
 
 .award > .awarder {
   text-align: center;
+}
+
+a:hover > p {
+  text-decoration: underline;
+}
+
+a {
+  position: relative;
+}
+
+div.img-darkener {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+a:hover > div.img-darkener {
+  background-color: rgba(0, 0, 0, 0.075);
 }
