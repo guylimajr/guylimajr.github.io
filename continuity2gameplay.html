@@ -44,14 +44,14 @@
               As a two-person team, we needed to design a small set of changes to:
             </p>
             <ul>
-              <li>Fix some of the major problems from <cite>the original</cite></li>
-              <li>Enhance and expand on the delight players got from <cite>the original</cite></li>
+              <li>Fix the major problems from <cite>the original</cite></li>
+              <li>Enhance and expand on the fun of <cite>the original</cite></li>
               <li>Make something that felt tailored for mobile devices</li>
             </ul>
 
             <p><cite>Continuity 2</cite> was designed and built by Stefan Mikaelsson and me. The early design work was mostly shared.</p>
 
-            <p>I created the vast majority of the 137 puzzles that we produced for <cite>Continuity 2</cite>. I extensively playtested the game to create, cull, and refine puzzles to make the best use of the gameplay mechanics we'd developed for the 51 levels that shipped.</p>
+            <p>I created the vast majority of the 137 puzzles that we produced for <cite>Continuity 2</cite>. I extensively playtested the game to create, cull, and edit puzzles to make the best use of the gameplay mechanics we'd developed. The game shipped with 51 levels.</p>
 
             <p>It was released in July, 2011. It has an 83 rating on Metacritic and a 4.5-star rating on the App Store.</p>
 
@@ -65,8 +65,8 @@
           <video src='images/c2-c1-example.mp4' autoplay='true' loop='true' controls='true' class='column columns_6'></video>
           <div class='column columns_6'>
             <p>
-              <cite>The original Continuity</cite> is a puzzle game where players delight in figuring out for themselves how the game's mechanics work.
-              The player moves the character through a world that's divided into tiles using two modes:
+              <cite>The original Continuity</cite> is a puzzle game where players delight in figuring out, for themselves, how the game's mechanics work.
+              You move control the game using two modes:
             </p>
             <ul>
               <li>When <strong>zoomed out</strong>, you <strong>move the tiles</strong>.</li>
@@ -105,7 +105,7 @@
           <img src='images/c2gameplay/level-size-comparison.png' alt='' class='column columns_6'>
           <div class='column columns_6'>
             <h3>More Puzzles Per Pixel</h3>
-            <p><cite>Continuity 2's</cite> level size was designed to keep everything clearly visible while zoomed out on a 3.5-inch phone. The result is a significantly smaller puzzles than in <cite>the original</cite>.</p>
+            <p><cite>Continuity 2's</cite> level size was designed to keep everything clearly visible while zoomed out on a 3.5-inch phone. This results in significantly smaller puzzles than in <cite>the original</cite>.</p>
             <p>We needed a way to <strong>fit a similar amount of challenge in less space</strong> to keep the game from being too easy.</p>
           </div>
         </section>
@@ -114,7 +114,7 @@
           <video src='images/c2gameplay/c1-connectedness.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
           <div class='column columns_6'>
             <h3>Even More Continuity</h3>
-            <p>In <cite>the original Continuity</cite>, the character can only move between tiles when their edges form a continuous image. However, in <cite>the original</cite>, you only ever need to match two tiles at a time: the one you're leaving and the one you're entering.</p>
+            <p>In both games, the character can only move between tiles when their edges form a continuous image. However, in <cite>the original</cite>, you only ever need to match two tiles at a time: the one you're leaving and the one you're entering.</p>
             <p>Making continuous matches was <strong>a unique aspect of <cite>the original</cite> that players really enjoyed</strong>. We wanted to enhance this fun for the sequel.</p>
           </div>
         </section>
@@ -123,9 +123,9 @@
           <video src='images/continuity/pause-trick.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
           <div class='column columns_6'>
             <h3>Hidden Surprises</h3>
-            <p>Players especially enjoyed moments where they feel like they discovered new aspects of the game all by themselves.</p>
-            <p>In <cite>the original Continuity's</cite> 13th puzzle, the player figures out that the gravity is paused when the world is zoomed out. This has been true all along, but the player needs to make this discovery to progress.</p>
-            <p>For <cite>Continuity 2</cite>, we wanted you to <strong>feel delighted for discovering something that was hidden in plain sight</strong>.</p>
+            <p>Players especially enjoyed moments where they felt like they'd discovered new aspects of the game all by themselves.</p>
+            <p>In <cite>the original Continuity's</cite> 13th puzzle, the player figures out that the gravity is paused when the world is zoomed out. This has been true all along, but the player needs to make this discovery here to progress.</p>
+            <p>For <cite>Continuity 2</cite>, we wanted you to <strong>feel delighted by discovering something that was hidden in plain sight</strong>.</p>
           </div>
         </section>
 
@@ -144,15 +144,15 @@
       <section id='approach'>
         <h2> Design Approach</h2>
         <section>
-          <p>Our team was small and we wanted to <strong>keep the game's scope small</strong>. Expanding <cite>the original</cite> with lots of new gameplay elements and mechanics would require us to produce lots of assets and code lots of new logic.</p>
-          <p>We chose to focus on gameplay concepts that were <strong>aesthetically minimal</strong> (so we were capable of producing them), <strong>logically simple</strong> (so we could code them), and that <strong>accomplished multiple design goals</strong> (so we didn't have to make too many).</p>
-          <p>In the end, we introduced just three mechanics. I designed puzzles to utilize these mechanics to achieve our goals.</p>
+          <p>Our team was small and we wanted to <strong>keep the game's scope small</strong>.</p>
+          <p>We chose to focus on concepts that were <strong>aesthetically minimal</strong> (so we were capable of producing them), <strong>logically simple</strong> (so we could code them), and that <strong>accomplished multiple design goals</strong> (so we didn't have to make too many).</p>
+          <p>In the end, we introduced just three mechanics. I used playtesting to learn how to create levels to best use them to achiever our goals.</p>
         </section>
       </section>
 
       <section id='coins'>
         <h2>Coins</h2>
-        <p>Some kind of optional bonus pickup item is common in platforming games. We originally conceived of coins as a way just to give you a moment of delight as you picked one up. Through playtesting, I found that coins helped players form <strong>subgoals</strong> and could make the game <strong>less punishing</strong>.</p>
+        <p>Optional pickup items are common in platforming games. We originally conceived of coins as a way just to give you a moment of delight whenever you picked one up. Through playtesting, I found that coins helped players form <strong>subgoals</strong> and could make the game <strong>less punishing</strong>.</p>
         <p class='section-description'>Coins are present from the very beginning to help you out.</p>
 
         <section>
@@ -160,7 +160,7 @@
           <div class='column columns_6'>
             <h3>Clearer Subgoals</h3>
             <p>I found that playtesters figured out where they needed to go by noticing which coins they'd collected and which they hadn't. They <strong>formed subgoals to move toward the coins they'd not yet collected</strong>.</p>
-            <p>Through playtesting, I found players felt best when they were always moving forward. I'd identify areas where playtesters would get lost and <strong>add coins to help guide them along</strong>.</p>
+            <p>Through playtesting, I found players felt best when they were always moving forward. I'd identify areas where playtesters would get lost and <strong>added coins to help guide them along</strong>.</p>
           </div>
         </section>
 
@@ -195,7 +195,7 @@
           <div class='column columns_6'>
             <h3>Hidden Surprise</h3>
             <p>In the 21st puzzle of <cite>Continuity 2</cite>, you discover that you have to rotate your device to change the direction of the game's gravity. <strong>You've been able to do this the whole game, but only now have you had any reason to try it.</strong></p>
-            <p>By puzzle 21, playtesters had played the game for almost hour. They were shocked and delighted when they discovered rotation.</p>
+            <p>By puzzle 21, playtesters had played the game for almost an hour. They were shocked and delighted when they discovered rotation.</p>
           </div>
         </section>
 
@@ -238,7 +238,7 @@
           <video src='images/c2gameplay/gates-connectedness.mp4' autoplay='true' controls='true' loop='true' alt='' class='column columns_6'></video>
           <div class='column columns_6'>
             <h3>Even More Continuity</h3>
-            <p>Flipping a lever when it connects to a gate by a series of wires, opens or closes the gate. <strong>Wires can connect levers to gates across several continuous tiles</strong>.</p>
+            <p>Flipping a lever when it is connected to a gate by a series of wires, opens or closes the gate. <strong>Wires can connect levers to gates across several continuous tiles</strong>.</p>
             <p>I found puzzles work best with <strong>multiple continuous arrangements</strong>. Generally, you need to create one configuration to connect the lever to the gate, but another to move from the lever to the gate.</p>
           </div>
         </section>
@@ -256,7 +256,7 @@
           <img src='images/c2gameplay/gates-density.png' alt='' class='column columns_6'>
           <div class='column columns_6'>
             <h3>More Puzzles Per Pixel</h3>
-            <p>Gates can be remotely opened to offer new paths out of previously visited rooms. This let me create puzzles where <strong>the same areas are revisited multiple times</strong>.</p>
+            <p>Gates can be remotely opened to offer new paths out of previously visited rooms. This let me create puzzles where <strong>the same areas serve multiple purposes</strong>.</p>
           </div>
         </section>
 
@@ -265,7 +265,7 @@
           <div class='column columns_6'>
             <h3>Bonus: Puzzle Variety</h3>
             <p>Through iteratively creating and playtesting puzzles, I found that I could make <strong>many different types of puzzles using levers, wires, and gates</strong>.</p>
-            <p>In this puzzle, when you flip the lever, some gates open, but others close to bar your path. This puzzle makes you move the tiles to break a connection in the world.</p>
+            <p>Normally, you need to open gates, but in this puzzle, you <strong>need to close the gate</strong> to create a bridge.</p>
           </div>
         </section>
 
