@@ -50,13 +50,13 @@
             <img src='images/commands/iOS_Open_And_Closed.png' alt='' class='column columns_6'>
           </div>
           <div class='column columns_6'>
-            <p>OneNote is a notetaking application that supports a bunch of different ways to edit your notes.</p>
+            <p>Microsoft OneNote is a notetaking application that supports a bunch of different ways to take notes.</p>
             <p>We were completely overhauling our Windows 8 app for Windows 10 and needed a new way to present all of OneNote's commands.</p>
             <p>With a colleague, I designed a new command interface that:</p>
             <ul>
               <li>Conveyed what made OneNote special</li>
               <li>Scaled to accommodate the commands being added for the Windows 10</li>
-              <li>Was highly usable</li>
+              <li>Was easily learnable</li>
             </ul>
             <p>This design shipped as part of the Windows 10 release in the Fall of 2015.</p>
           </div>
@@ -70,11 +70,11 @@
         <section>
           <div class='column columns_4'>
             <h3>Show You What OneNote is Good For</h3>
-            <p>When you start OneNote for the first time, it's hard to tell what the app is good for or how it's different from other apps you already use.</p>
+            <p>When you start OneNote for the first time, it's hard to tell how it's different from other apps you already know and use, like Word.</p>
             <p>The UI should showcase what makes OneNote special.</p>
           </div>
           <div class='column columns_4'>
-            <h3>Scale to lots of commands</h3>
+            <h3>Scale to Fit Lots of Commands</h3>
             <p>OneNote for Windows 10 was adding more features quickly as it moved to reach feature parity with OneNote 2013.</p>
             <p>We needed a UI model that would be able to accommodate many commands and could accommodate more as they were added.</p>
           </div>
@@ -89,16 +89,14 @@
 
       <section id='background'>
         <h2>Background</h2>
-        <!-- <p class='section-description'></p> -->
+        <p class='section-description'>My colleague had been working on this project for a little while before I joined. She was trying to solve problems some problems specific to the previous Windows 8 app in addition to some that had existed across all OneNote clients for years.</p>
 
         <section>
           <img src='images/commands/Good_Notes.png' alt='' class='column columns_6'>
           <div class='column columns_6'>
-            <h3>OneNote Remembers Many Kinds of Things</h3>
-            <p>OneNote is a notetaking application that lets you keep many different kinds of 
-            content, like</p>
+            <h3>OneNote Keeps Many Kinds of Things</h3>
+            <p>Microsoft OneNote is a notetaking application that lets you keep many different kinds of content, like</p>
             <ul>
-              <li>text</li>
               <li>to do lists</li>
               <li>scanned documents/whiteboards</li>
               <li>audio recordings</li>
@@ -116,10 +114,10 @@
             <p>For years, user studies and interviews told us that people didn't really get what made OneNote different from Word. Starting OneNote for the first time, they'd notice:</p>
             <ul>
               <li>A Ribbon filled with a lot of text editing commands, just like Word</li>
-              <li>A big white page where they can type, whereas Excel's and PowerPoint's canvases are distinct </li>
+              <li>A big white page where they can type, whereas Excel and PowerPoint have distinct canvases</li>
             </ul>
             <p>They would just walk away from the app unsure of how it was any different than Word, which they already knew and used.</p>
-            <p>We wanted to make it clearer what OneNote was good for.</p>
+            <p>We wanted to clarify that OneNote was a great place to store todos, images, audio recordings, and files that you want to remember later.</p>
           </div>
         </section>
 
@@ -127,10 +125,10 @@
           <img src='images/commands/Radial_Menu.png' alt='' class='column columns_6'>
           <div class='column columns_6'>
             <h3>Need To Replace The Radial Menu</h3>
-            <p>Windows 8 put its commands in a Radial Menu. The radial menu had two main problems:</p>
+            <p>OneNote for Windows 8 put its commands in a Radial Menu, which had two main problems:</p>
             <ul>
-              <li>Usability: many users never figured out that tapping the inner sector of the circle invoked a command and tapping the outer sector provided similar commands</li>
-              <li>Scalability: as OneNote grew, we were experiencing problems adding commands as the Radial Menu could only house 8 per-level</li>
+              <li>Usability: many users never figured out that tapping the arrow in the outer sector of the Radial Menu would show more commands</li>
+              <li>Scalability: as OneNote grew, we were having issues adding commands; the Radial Menu could only house 8 per-level</li>
             </ul>
             <p>We wanted to replace the Radial Menu with something that was easier to use and could accomodate the new features we were adding for the Windows 10 release.</p>
           </div>
@@ -139,14 +137,11 @@
         <section>
           <img src='images/commands/Previous_Work.png' alt='' class='column columns_6'>
           <div class='column columns_6'>
-            <h3>Inventing Something New</h3>
+            <h3>Designing New Interactions Isn't Working</h3>
             <p>My colleague believed that elevating a few, key features to the top-level of the UI would help users' understand OneNote's unique value.</p>
-            <p>She had so far mostly attempted to do this by augmenting the Ribbon's interactions. She desired to use the Ribbon because:</p>
-            <ul>
-              <li>It scaled to facilitate all of the commands OneNote was adding with this Windows 10 release </li>
-              <li>It would be cheaper to develop, as we could use code created for other Office apps</li>
-            </ul>
+            <p>She had so far mostly attempted to do this by changing how you interact with the Ribbon, like making it hidden by default or adding an extra row of buttons.</p>
             <p>However, things just weren't clicking in usability studies.</p>
+
           </div>
         </section>
 
@@ -154,17 +149,16 @@
 
 
       <section id='color-coding'>
-        <h2>Embracing the Ribbon</h2>
-        <p class='section-description'>My colleague's previous efforts had focused on changing how users interacted with the Ribbon in order to showcase OneNote's value. I explored whether we could keep the Ribbon, but simply change its structure.</p>
+        <h2>Redesigning Information Architecture</h2>
+        <p class='section-description'>My colleague's previous efforts had focused on changing how you interacted with the Ribbon. When I joined the project, I explored if we could simply redesign its information architecture to better show OneNote's value.</p>
 
         <section>
           <img src='images/commands/All_The_Ribbons.png' alt='' class='column columns_6'>
           <div class='column columns_6'>
             <h3>People Have Learned The Ribbon</h3>
-            <p>The Ribbon was a UI pattern that had been around for over 7 years. It was used throughout Windows and Office apps across platforms. Usability studies showed users were comfortable and capable using the standard Ribbon in OneNote apps due to their years of experience using it in other apps.</p>
-            <p>Other Office apps showed that the Ribbon scaled to a huge number of commands.
-            </p>
-            <p>So if I just modified the Ribbon's information architecture to showcase what made OneNote unique, we'd meet our goals.</p>
+            <p>The Ribbon is a UI pattern that had been used throughout Office and Windows for over 7 years. Usability studies showed users were comfortable and capable using the standard Ribbon in OneNote apps due to their years of experience using it in elsewhere. Changing how the Ribbon worked lead to usability issues as users had to learn something new.</p>
+            <p>Other Office apps showed that the Ribbon scaled to a huge number of commands.</p>
+            <p>If we could just use the Ribbon pattern as-is, we'd have solved usability and scalability. I proposed we clarify OneNote's value by changing where things went in the Ribbon.</p>
           </div>
         </section>
 
@@ -208,7 +202,7 @@
           <img src='images/commands/heatmap.png' alt='' class='column columns_6'>
           <div class='column columns_6'>
             <h3>Prioritizing Commands Based On Data</h3>
-            <p>I used a heatmap, created from analytics, to determine which commands were most-used in OneNote to ensure that they would be available at the top-level.</p>
+            <p>I used a heatmap, created from analytics, to determine which commands were most-used in OneNote. This helped me ensure the right commands would be available at the top-level.</p>
           </div>
         </section>
 
@@ -240,9 +234,9 @@
         <section>
           <img src='images/commands/UWP.png' alt='' class='column columns_6'>
           <div class='column columns_6'>
-            <p>This design shipped as part of OneNote's Windows 10 app in late 2015.</p>
-            <p>Usability tests showed that this new model greatly increased user recognition of what OneNote's main selling points were.</p>
-            <p> User feedback showed that some users found the Radial Menu more delightful. However, the vast majority were more competent at using the revised Ribbon.</p>
+            <p>This design shipped as part of OneNote's Windows 10 app in late 2015. Relying on the existing Ribbon paradigm let users use their existing knowledge and made it easy to introduce new commands as they were available.</p>
+            <p>User feedback showed that some users found the Radial Menu more delightful. However, usability studies showed that an overwhelming majority were more competent at using the updated Ribbon.</p>
+            <p>User tests showed that this new model greatly increased user recognition of what OneNote's main selling points were.</p>
           </div>
         </section>
 
