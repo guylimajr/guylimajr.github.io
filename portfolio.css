@@ -168,6 +168,7 @@ nav {
   justify-content: center;
   text-transform: lowercase;
   position: fixed;
+  z-index:1;
   width: 100%;
 }
 
