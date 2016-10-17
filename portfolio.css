@@ -33,6 +33,10 @@ h1 {
   margin-bottom: 18pt;
 }
 
+span.keep-caps {
+  text-transform: none;
+}
+
 p, li {
   color: #202020;
   line-height: 18pt;
